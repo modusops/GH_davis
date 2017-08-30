@@ -1640,7 +1640,7 @@
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.55);
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
@@ -1700,7 +1700,8 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
-		font-weight: bold;
+		opacity: .25;
+		font-weight: regular;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
 	}
@@ -1739,7 +1740,7 @@
 			}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 1.25em;
 	}
 
 	h3 {
@@ -3530,7 +3531,7 @@
 		margin: 0 auto;
 	}
 
-/* Sidebar */
+/* Sidebar make changes to side nav color here*/
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
@@ -3767,22 +3768,19 @@
 				height: 0.2em;
 				position: absolute;
 				right: 0;
-				width: 100%;
+				width: 50%;
 			}
 
-			#sidebar nav a:before {
-				background: #3c2c62;
-			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
-				-moz-transition: max-width 0.2s ease;
-				-webkit-transition: max-width 0.2s ease;
-				-ms-transition: max-width 0.2s ease;
-				transition: max-width 0.2s ease;
+				background-image: -moz-linear-gradient(to right, #b74e91, #b74e91);
+				background-image: -webkit-linear-gradient(to right, #b74e91, #b74e91);
+				background-image: -ms-linear-gradient(to right, #b74e91 #b74e91);
+				background-image: linear-gradient(to right, #b74e92, #b74e91);
+				-moz-transition: max-width 0.1s ease;
+				-webkit-transition: max-width 0.1s ease;
+				-ms-transition: max-width 0.1s ease;
+				transition: max-width 0.1s ease;
 				max-width: 0;
 			}
 
@@ -3868,6 +3866,7 @@
 						#sidebar nav a:after {
 							background-image: none;
 							background-color: #b74e91;
+							width: 100%;
 						}
 
 		}
@@ -3884,14 +3883,18 @@
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		background: #E8CBC0;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		/*background-image: url("images/intro.svg");*/
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 	}
 
 		#intro p {
-			font-size: 1.25em;
+			font-size: 1em;
 		}
 
 			@media screen and (max-width: 980px) {
@@ -3916,4 +3919,10 @@
 				background-attachment: scroll;
 			}
 
+		}
+
+/* One */
+
+		#one p {
+			font-size: .85em;
 		}
