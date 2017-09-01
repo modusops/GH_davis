@@ -1,11 +1,5 @@
 @import url(font-awesome.min.css);
 
-/*
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1704,7 +1698,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
-		opacity: .25;
+		opacity: .5;
 		font-weight: regular;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -3390,6 +3384,8 @@
 		padding: 1.75em 2em;
 	}
 
+
+
 		#header > .title {
 			border: 0;
 			color: #ffffff;
@@ -3891,10 +3887,16 @@
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+		padding-top: 40px;
 	}
 
 		#intro p {
 			font-size: 1em;
+		}
+
+		#intro h2 {
+			color: #ffffff;
+			opacity: 1;
 		}
 
 			@media screen and (max-width: 980px) {
@@ -3923,6 +3925,6 @@
 
 /* One */
 
-		#one p {
+		#one, #two p {
 			font-size: .85em;
 		}
