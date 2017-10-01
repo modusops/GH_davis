@@ -3413,6 +3413,22 @@
 		padding: 1.75em 2em 1.75em 8em;
 	}*/
 
+		#header {
+			margin: 0px;
+			cursor: default;
+			width: 100vw;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			position: -webkit-sticky; /* Safari */
+    	position: sticky;
+			text-align: centered;
+			background-color: #121420;
+			opacity: 1;
+			z-index: 999;
+
+		}
+
 		#header > .inner {
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -3436,7 +3452,7 @@
 			transition: opacity 1s ease;
 			min-height: 100%;
 			opacity: 1;
-			width: 100%;
+
 		}
 
 		#header nav > ul {
