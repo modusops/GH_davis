@@ -1,4 +1,5 @@
 @import url(font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900|Roboto:100,300|Open+Sans:400|Yeseva+One');
 
 /* Reset */
 
@@ -1738,12 +1739,24 @@
 				width: 100%;
 			}*/
 
+	h1 {
+		font-family: 'Raleway', sans-serif;
+		font-size: 2.5em;
+		font-weight: 900;
+		letter-spacing: .0125em;
+	}
+
 	h2 {
-		font-size: 1.25em;
+		font-family: 'Roboto', sans-serif;
+		font-size: 3em;
+		font-weight: 100;
+		letter-spacing: .0125em;
 	}
 
 	h3 {
+		font-family: 'Roboto', sans-serif;
 		font-size: 1.1em;
+		font-weight: 100;
 	}
 
 	h4 {
@@ -1756,6 +1769,25 @@
 
 	h6 {
 		font-size: 0.6em;
+	}
+
+	p {
+		font-family: 'Roboto', sans-serif;
+		font-size: 1em;
+		font-weight: 100;
+		line-height: 1.8em;
+		letter-spacing: .1em;
+	}
+
+	p.title {
+		font-size: 1.5em;
+		font-weight: 300;
+	}
+
+	li {
+			font-family: 'Roboto', sans-serif;
+			font-size: 1em;
+			font-weight: 100;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -3109,7 +3141,7 @@
 		@media screen and (max-width: 1680px) {
 
 			.spotlights > section > .content {
-				padding: 4em 4em 2em 4em ;
+				padding: 4em 15em 2em 4em ;
 			}
 
 		}
