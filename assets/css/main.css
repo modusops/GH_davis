@@ -1684,6 +1684,19 @@
 			color: #ffffff;
 		}
 
+		#one a {
+				transform: scale(.75,.75);
+				transition-property: transform;
+				transition-duration: 0.2s;
+				transition-timing-function: ease-in-out;
+				transition-delay: initial;
+
+			}
+
+		#one a:hover {
+				transform: scale(.80, .80);
+			}
+
 	strong, b {
 		color: #ffffff;
 		font-weight: bold;
@@ -2626,11 +2639,16 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
+		box-shadow: 0 0 200px -20px rgba(4,10,15,0.68) ;
 	}
 
 		.image img {
 			border-radius: 0.25em;
 			display: block;
+		}
+
+		.image a:hover {
+			border-bottom-color: transparent;
 		}
 
 		.image.left, .image.right {
@@ -2737,6 +2755,7 @@
 						font-style: normal;
 						font-weight: normal;
 						text-transform: none !important;
+						font-size: 1.2em;
 					}
 
 					ul.icons li > a .label, ul.icons li > span .label {
@@ -2875,6 +2894,7 @@
 				line-height: 1;
 				margin-left: 1.5em;
 				padding: 0 0 0 1.5em;
+				letter-spacing:.15em;
 			}
 
 				ul.menu > li:first-child {
@@ -3154,11 +3174,12 @@
 
 				.spotlights > section > .image {
 					width: 100%;
-					height: 50vh;
+					height: 80vh;
 				}
 
 				.spotlights > section > .content {
-					width: 100%;
+					/*width: 100%;*/
+					display: none;
 				}
 
 				.spotlights > section.inactive > .content > .inner, body.is-loading .spotlights > section > .content > .inner {
@@ -3178,7 +3199,8 @@
 			}
 
 			.spotlights > section > .content {
-				padding: 3em 2em 1em 2em ;
+				/*padding: 0em 2em 1em 4em;*/
+				display: none;
 			}
 
 		}
@@ -3258,7 +3280,7 @@
 	}
 
 		.wrapper > .inner {
-			padding: 5em 5em 3em 5em ;
+			padding: 3em 5em 3em 5em ;
 			max-width: 100%;
 			width: 75em;
 		}
@@ -3266,7 +3288,7 @@
 			@media screen and (max-width: 1680px) {
 
 				.wrapper > .inner {
-					padding: 4em 4em 2em 4em ;
+					padding: 1em 4em 2em 4em ;
 				}
 
 				.wrapper.generic > .inner {
@@ -3380,7 +3402,7 @@
 			-moz-transition: opacity 1s ease, -moz-transform 1s ease;
 			-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-			transition: opacity 1s ease, transform 1s ease;
+			transition: opacity 3s ease, transform 5s ease;
 			opacity: 1.0;
 		}
 
@@ -3787,7 +3809,7 @@
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.15);
+		color: rgba(255, 255, 255, 0.25);
 	}
 
 	#header + #wrapper + #footer > .inner {
