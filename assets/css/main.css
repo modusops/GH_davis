@@ -2685,7 +2685,7 @@
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			/*margin: 0 0 2em 0;*/
 			width: 100%;
 		}
 
@@ -2717,9 +2717,9 @@
 		}
 
 	ul {
-		list-style: disc;
-		margin: 0 0 2em 0;
-		padding-left: 1em;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
 	}
 
 		ul li {
@@ -2896,12 +2896,38 @@
 					margin-top: 0;
 				}
 
+/*---------project intro edits---------*/
 
-			ul.project-intro {
-				list-style: none;
-				padding: 5em;
+		ul.project-intro {
+			list-style: none;
+			padding: 5em 5em 5em 5em;
+			margin: 0;
 			}
 
+		@media screen and (max-width: 1280px) {
+
+					ul.project-intro h2 + p {
+						padding-bottom: 0;
+						}
+
+		}
+		@media screen and (max-width: 680px) {
+
+					ul.project-intro {
+						padding: 1em 1em 1em 1em;
+						}
+
+					ul.project-intro p {
+						display: none;
+						}
+					ul.project-intro h2 {
+						padding: 1em 1em 1em 1em;
+						}
+
+		}
+
+
+@media screen and (max-width: 480px) {
 
 		ul.menu {
 			list-style: none;
@@ -3324,9 +3350,9 @@
 					width: 100%;
 				}
 
-				.wrapper.generic > .inner {
+				/*.wrapper.generic > .inner {
 					padding: 0em 4em 2em 4em ;
-				}
+				}*/
 
 			}
 
@@ -3336,9 +3362,10 @@
 					padding: 3em 2em 1em 2em ;
 				}
 
-				.wrapper.generic > .inner {
-					padding: 0em 4em 2em 4em ;
-				}
+			/*This gives the page a weird spacing between each section on the generic page*/
+				/*.wrapper.generic > .inner {
+					padding: 0em 4em 0em 4em ;
+				}*/
 
 			}
 
@@ -3802,9 +3829,26 @@
 
 		}
 
+
 	#header + #wrapper > .wrapper > .inner {
 		margin: 0 auto;
+		padding: 5em;
 	}
+
+		@media screen and (max-width: 736px) {
+
+			#header + #wrapper > .wrapper > .inner {
+				padding: 3em;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#header + #wrapper > .wrapper > .inner {
+				padding: 1em;
+			}
+
+		}
 
 /* Footer */
 
@@ -4238,11 +4282,17 @@
 /* main */
 
 			#main {
-				background-color: #000000;
+				/*background-color: #000000;
 				background-position: top right;
 				background-repeat: repeat;
 				background-size: 100%;
-				height: 100%auto;;
+				height: 100% auto;*/
+
+				background-image: url("../../images/editor-bg-3.jpg");
+				background-position: top right;
+				background-repeat: repeat-y;
+				background-size: 100%;
+				height: 100%;*/
 			}
 
 			#main h2 {
@@ -4255,17 +4305,32 @@
 				font-size: .85em;
 			}
 
-			#main h2 + p {
-				padding-bottom: 50px;
+			@media screen and (max-width: 736px) {
+
+				#main h2 {
+				 	font-size: 2em ;
+				}
 			}
 
-/* main two */
+			@media screen and (max-width: 480px) {
+
+				#main h2 {
+					font-size: 1.2em ;
+				}
+			}
+
+
+/* main two (section for project thumbnails)*/
 			#main-two {
-				background-image: url("../../images/editor-bg-3.jpg");
-				background-position: top right;
+				/*background-image: url("../../images/editor-bg-3a.jpg");*/
+				/*background-position: top right;
 				background-repeat: repeat-y;
 				background-size: 100%;
-				height: 100%auto;;
+				height: 100%;*/
+			}
+
+			#main-two p {
+				padding-bottom: 2em;
 			}
 
 			@media screen and (max-width: 1280px) {
@@ -4281,41 +4346,96 @@
 				#main-two {
 					padding-top: 0em;
 				}
+				#main-two p {
+					padding-bottom: 1em;
+				}
+
+			@media screen and (max-width: 480px) {
+
+				#main-two {
+					padding-top: 2em;
+					padding-bottom: 2em;
+				}
+				#main-two p {
+					padding-bottom: .5em;
+				}
 
 			}
 
+/*Wrapper spacing between each thumbnail*/
+
 			#wrapper > #main-two > .inner {
 				padding-top: 4em;
+				padding-bottom: 4em;
+
+			}
+
+			@media screen and (max-width: 736px) {
+
+				#wrapper > #main-two > .inner {
+					padding-top: 2em;
+					padding-bottom: 2em;
+
+				}
+
+			}
+
+			@media screen and (max-width: 480px) {
+
+				#wrapper > #main-two > .inner {
+					padding-top: .5em;
+					padding-bottom: .5em;
+
+				}
 
 			}
 
 /* main three */
-			#main-three {
+			/*#main-three {
 				background-image: url("../../images/editor-bg-3.jpg");
 				background-position: top right;
 				background-repeat: repeat-y;
 				background-size: 100%;
+			}*/
+
+
+
+			.videoWrapper {
+				position: relative;
+				padding-bottom: 56.25%; /* 16:9 */
+				padding-top: 25px;
+				height: 0;
+			}
+			.videoWrapper iframe {
+				position: absolute;
+				top: 13%;
+				left: 13%;
+				width: 75%;
+				height: 75%;
 			}
 
-			@media screen and (max-width: 1280px) {
+				@media screen and (max-width: 1280px) {
+
+					.videoWrapper {
+						position: relative;
+						padding-bottom: 56.25%; /* 16:9 */
+						padding-top: 25px;
+						height: 0;
+					}
+
+				}
+
+			/*@media screen and (max-width: 736px) {
 
 				#main-three {
 					padding-top: 0em;
 				}
 
-			}
+			}*/
 
-			@media screen and (max-width: 736px) {
-
-				#main-three {
-					padding-top: 0em;
-				}
-
-			}
-
-			#wrapper > #main-three > .inner {
+			/*#wrapper > #main-three > .inner {
 				padding-top: 4em;
 				padding-bottom: 4em;
 				padding-left: 5%;
 
-			}
+			}*/
