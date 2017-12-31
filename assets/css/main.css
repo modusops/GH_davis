@@ -2686,6 +2686,7 @@
 		.image.fit {
 			display: block;
 			/*margin: 0 0 2em 0;*/
+			margin-bottom: 3em;
 			width: 100%;
 		}
 
@@ -3786,8 +3787,9 @@
 							display: block;
 							height: inherit;
 							line-height: inherit;
-							margin: 0 0 0 2em;
-							padding: 0;
+							margin: 0;
+							padding-left: 1em;
+							padding-right: 1em;
 						}
 
 					#header nav a {
