@@ -2705,6 +2705,38 @@
 				width: 100%;
 			}
 
+/* setting the space below each thumbnail in project page */
+
+#main-two .image.fit {
+	margin-bottom: 1em;
+}
+
+@media screen and (max-width: 1280px) {
+
+	#main-two .image.fit {
+		margin-bottom: 1em;
+	}
+
+}
+
+
+@media screen and (max-width: 736px) {
+
+	#main-two .image.fit {
+		margin-bottom: 1em;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	#main-two .image.fit {
+		margin-bottom: 1em;
+	}
+
+}
+
+
 /* List */
 
 	ol {
@@ -4357,6 +4389,13 @@
 
 			#main-two p {
 				padding-bottom: 2em;
+				font-size: .75em;
+			}
+
+			#main-two h2 {
+				font-weight:300;
+				padding-bottom: .25em;
+				font-size: 1.5em;
 			}
 
 			@media screen and (max-width: 1280px) {
@@ -4375,6 +4414,8 @@
 				#main-two p {
 					padding-bottom: 1em;
 				}
+
+			}
 
 			@media screen and (max-width: 480px) {
 
