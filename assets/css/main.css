@@ -2708,7 +2708,7 @@
 /* setting the space below each thumbnail in project page */
 
 #main-two .image.fit {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 }
 
 @media screen and (max-width: 1280px) {
@@ -2756,8 +2756,14 @@
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			padding-left: 0em;
 		}
+
+/* Start spacing for Made in NY in Footer */
+		#footer > ul li {
+			padding-left: 0em;
+		}
+/* End spacing for Made in NY in Footer */
 
 		ul.alt {
 			list-style: none;
@@ -3368,7 +3374,7 @@
 			@media screen and (max-width: 1680px) {
 
 				.wrapper > .inner {
-					padding: 1em 4em 2em 4em ;
+					padding: 1em 4em 2em 3em ;
 				}
 
 				.wrapper.generic > .inner {
