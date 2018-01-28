@@ -2708,7 +2708,7 @@
 /* setting the space below each thumbnail in project page */
 
 #main-two .image.fit {
-	margin-bottom: 1.5em;
+	margin-bottom: 3.5em;
 }
 
 @media screen and (max-width: 1280px) {
@@ -4394,15 +4394,19 @@
 			}
 
 			#main-two p {
-				padding-bottom: 2em;
+				padding-bottom: 1em;
 				font-size: .75em;
 			}
 
 			#main-two h2 {
-				font-weight:300;
-				padding-bottom: .25em;
+				font-weight:500;
 				font-size: 1.5em;
+				margin-bottom: 0;
 			}
+
+			/* #main-two span {
+				margin-bottom: 2em;
+			} */
 
 			@media screen and (max-width: 1280px) {
 
