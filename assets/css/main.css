@@ -1620,9 +1620,10 @@
 
 	body {
 		/*background: #312450;*/
-		background: #E8CBC0;  /* fallback for old browsers */
-		background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		background: #858AB9;  /* fallback for old browsers */
+		/*Gradient bg style*/
+		/* background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  Comments: Chrome 10-25, Safari 5.1-6 */
+		/* background: linear-gradient(to right, #636FA4, #E8CBC0); Comments: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 	}
 
@@ -1640,7 +1641,7 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.55);
+		color: rgba(255, 255, 255, 0.85);
 		font-family: Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
@@ -1714,7 +1715,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
-		opacity: .5;
+		opacity: 1;
 		font-weight: regular;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -3180,6 +3181,7 @@
 			display: block;
 			position: relative;
 			width: 25em;
+			border-radius: 15px;
 		}
 
 			.spotlights > section > .image img {
@@ -3257,7 +3259,7 @@
 		@media screen and (max-width: 1680px) {
 
 			.spotlights > section > .content {
-				padding: 4em 15em 2em 4em ;
+				padding: 2em 15em 2em 4em ;
 			}
 
 
@@ -3883,7 +3885,10 @@
 
 	#header + #wrapper > .wrapper > .inner {
 		margin: 0 auto;
-		padding: 5em;
+		padding-top: 5em;
+    padding-right: 10em;
+    padding-bottom: 5em;
+    padding-left: 10em;
 	}
 
 		@media screen and (max-width: 736px) {
@@ -4412,7 +4417,7 @@
 
 			#main-two p {
 				padding-bottom: 1em;
-				padding-right: 10em;
+				/* padding-right: 10em; */
 				font-size: 1em;
 				letter-spacing: .75px;
 			}
