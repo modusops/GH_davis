@@ -1620,7 +1620,7 @@
 
 	body {
 		/*background: #312450;*/
-		background: #858AB9;  /* fallback for old browsers */
+		background: #F9F9F9;  /* fallback for old browsers #858AB9*/
 		/*Gradient bg style*/
 		/* background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  Comments: Chrome 10-25, Safari 5.1-6 */
 		/* background: linear-gradient(to right, #636FA4, #E8CBC0); Comments: W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -1701,7 +1701,7 @@
 			}
 
 	strong, b {
-		color: #ffffff;
+		color: #000;
 		font-weight: bold;
 	}
 
@@ -1710,11 +1710,12 @@
 	}
 
 	p {
+		color: #000;
 		margin: 0 0 0 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #000;
 		opacity: 1;
 		font-weight: regular;
 		line-height: 1.5;
@@ -2656,7 +2657,7 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
-		box-shadow: 0 0 200px -20px rgba(4,10,15,0.68) ;
+		/* box-shadow: 0 0 200px -20px rgba(4,10,15,0.68) ; */
 	}
 
 		.image img {
@@ -2813,6 +2814,7 @@
 						font-weight: normal;
 						text-transform: none !important;
 						font-size: 1.2em;
+						color: #000
 					}
 
 					ul.icons li > a .label, ul.icons li > span .label {
@@ -3580,7 +3582,7 @@
     	position: sticky;
 			text-align: centered;
 			background-color: #121420;
-			opacity: .5;
+			opacity: .8;
 			z-index: 999;
 
 		}
@@ -3930,7 +3932,7 @@
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.25);
+		color: #000;
 	}
 
 	#header + #wrapper + #footer > .inner {
@@ -4154,7 +4156,7 @@
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.35);
+			color: #000;
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
@@ -4174,7 +4176,7 @@
 				height: 0.2em;
 				position: absolute;
 				right: 0;
-				width: 50%;
+				width: 60%;
 			}
 
 
@@ -4191,11 +4193,11 @@
 			}
 
 			#sidebar nav a:hover {
-				color: rgba(255, 255, 255, 0.55);
+				color: #b74e92;
 			}
 
 			#sidebar nav a.active {
-				color: #ffffff;
+				color: #000;
 			}
 
 				#sidebar nav a.active:after {
@@ -4359,6 +4361,14 @@
 				height: 100%;*/
 			}
 
+			#main.tesla {
+				background-image: url("../../images/tesla-bg-3.jpg");
+				background-position: top right;
+				background-repeat: repeat-y;
+				background-size: 100%;
+				height: 100%;*/
+			}
+
 			#main.tofrom {
 				background-image: url("../../images/tofrom-bg-1.jpg");
 				background-position: top right;
@@ -4383,12 +4393,21 @@
 
 			#main p {
 				font-size: 1em;
+				color: #ffffff;
 			}
 
 			#main li {
 				font-size: .85em;
 				line-height: 1.8em;
 				letter-spacing: .125em
+			}
+
+			#main li h4  {
+				color:#fff;
+			}
+
+			#main li p  {
+				color:#fff;
 			}
 
 			@media screen and (max-width: 736px) {
