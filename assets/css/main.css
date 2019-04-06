@@ -4448,6 +4448,13 @@
 				letter-spacing: 1px;
 			}
 
+			#main-two h3 {
+				font-weight:400;
+				/* font-size: 1.5em;
+				margin-bottom: 0;
+				letter-spacing: 1px; */
+			}
+
 			/* #main-two span {
 				margin-bottom: 2em;
 			} */
