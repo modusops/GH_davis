@@ -1684,7 +1684,8 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff;
+			color: #b74e92;
+			cursor: pointer;
 		}
 
 		#one a {
